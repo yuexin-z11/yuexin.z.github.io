@@ -10,3 +10,66 @@
   <link href="content/pur.css" rel="stylesheet" type="text/css">
 </head>
 
+<body class="background-period">
+    <div class="navCus">
+      <a class="name-c"><strong>Contact Me</strong></a>
+    </div>  
+    <div class="b-container navCus2">
+      <div class="tabb">
+          <a href="index.html">
+              <button class="tab">Home</button>
+          </a>
+          <div class = "vertical-line1"></div>
+          <a href="more.html">
+              <button class="tab">Things I Love Doing</button>
+          </a>
+          <div class = "vertical-line2"></div>
+          <a href="resume.html">
+              <button class="tab">Resume Related</button>
+          </a>
+          <div class = "vertical-line3"></div>
+          <a href="contactme.html">
+              <button class="tab">Contact Me</button>
+          </a>
+      </div>
+  </div>
+    <div class="form-container">
+      <form action="https://formsubmit.co/teresayuexinzhang@email.com" method="POST">
+        <!-- catch -->
+        <input type="text" name="_catch" style="display: none;">
+        <input type="hidden" name="_capcha" value="false">
+        <input type="hidden" name="_next" href="/success.html">
+
+        <div style="display: flex; justify-content: space-between;">
+          <div style="flex-grow: 1; margin-right: 10px;">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder=" your first name..." required>
+          </div>
+          <div style="flex-grow: 1;">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder=" your last name..." required>
+          </div>
+        </div>
+        
+        <div>
+          <label for="mail">E-mail Address</label>
+          <input type="text" id="mail" name="email" placeholder=" xxxx@gmail.com">
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phoneNumber" placeholder=" +1(123)456-7890">
+        </div>
+
+        <div>
+          <label for="message">Leave a Message</label>
+          <input type="text" id="message" name="messages" placeholder=" Leave your note..." style="height: 200px;">
+        </div>
+      </form>
+      <div class="btn-c">
+          <a href="success.html">
+              <button class="submit-button"><strong>Submit</strong></button>
+          </a>
+      </div>
+    </div>
+</body>
