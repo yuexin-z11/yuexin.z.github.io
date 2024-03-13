@@ -211,12 +211,15 @@
 /* all about the form */
 .form-container {
     border-radius: 7px;
-    background-color: #ffffff;
+    background-color: white;
     padding: 25px;
     position: absolute;
-    top: 66%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=text], select, textarea {
