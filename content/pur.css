@@ -226,7 +226,7 @@ input[type=text], select, textarea {
     width: 100%;
     padding: auto;
     border: 1px solid #ffffff;
-    color: white;
+    color: #000F78;
     border-radius: 6px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -236,7 +236,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
     background-color: #ffffff;
-    color: white;
+    color: #000F78;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
