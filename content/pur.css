@@ -457,7 +457,7 @@ input[type=submit]:hover {
 
 /* for picture slideshow */
 .slide-container {
-    /* max-width: 1000px; */
+    max-width: 1000px;
     position: relative;
     margin: audo;
 }
