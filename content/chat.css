@@ -4,13 +4,6 @@
     padding:0;
 }
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 100%;
-    background-color:blue;
-}
-
 *, html {
     --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
     --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
