@@ -3,9 +3,9 @@ const { exec } = require('child_process');
 class Chatbox {
     constructor() {
         this.args = {
-            openButton: document.querySelector('.chatbox__button'),
-            chatBox: document.querySelector('.chatbox__support'),
-            sendButton: document.querySelector('.send__button')
+            openButton: document.querySelector('.chatbox_button'),
+            chatBox: document.querySelector('.chatbox_support'),
+            sendButton: document.querySelector('.send_button')
         }
 
         this.state = false;
@@ -14,7 +14,7 @@ class Chatbox {
 
     display() {
         const { openButton, chatBox, sendButton } = this.args;
-
+        console.log('Open button clicked');
         openButton.addEventListener('click', () => {
             console.log('Open button clicked');
             this.toggleState(chatBox);
@@ -39,9 +39,9 @@ class Chatbox {
 
         // show or hides the box
         if (this.state) {
-            chatbox.classList.add('chatbox--active')
+            chatbox.classList.add('chatbox-active')
         } else {
-            chatbox.classList.remove('chatbox--active')
+            chatbox.classList.remove('chatbox-active')
         }
     }
 
@@ -74,13 +74,13 @@ class Chatbox {
         var html = '';
         this.messages.slice().reverse().forEach(function (item, index) {
             if (item.name === "CC") {
-                html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
+                html += '<div class="messages_item messages_item-visitor">' + item.message + '</div>'
             } else {
-                html += '<div class="messages__item messages__item--operator">' + item.message + '</div>'
+                html += '<div class="messages_item messages_item-operator">' + item.message + '</div>'
             }
         });
 
-        const chatmessage = chatbox.querySelector('.chatbox__messages');
+        const chatmessage = chatbox.querySelector('.chatbox_messages');
         chatmessage.innerHTML = html;
     }
 }

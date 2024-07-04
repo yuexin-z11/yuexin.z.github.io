@@ -1,10 +1,51 @@
+# move everything together 
 import random
 import json
 import jsonlines
 import torch
 import numpy as np
-from model import NeuralN
-from utilities import bag_of_words, tokenize
+import torch.nn as nn
+import nltk
+from nltk.stem.porter import PorterStemmer
+stemmer = PorterStemmer()
+
+class NeuralN(nn.Module):
+    def __init__(self, input_size, hidden_size, num_classes):
+        # define layers
+        super(NeuralN, self).__init__()
+        self.l1 = nn.Linear(input_size, hidden_size) 
+        self.l2 = nn.Linear(hidden_size, hidden_size) 
+        self.l3 = nn.Linear(hidden_size, num_classes)
+        self.relu = nn.ReLU()
+    
+    def forward(self, x):
+        out = self.l1(x)
+        out = self.relu(out)
+        out = self.l2(out)
+        out = self.relu(out)
+        out = self.l3(out)
+        return out
+
+def tokenize(sentence):
+    return nltk.word_tokenize(sentence)
+
+# find the root 
+def stem(word):
+    return stemmer.stem(word.lower())
+
+# determine each word in the sentence 
+def bag_of_words(tokenized, words):
+    # break down the sentence
+    sentence = [stem(word) for word in tokenized]
+
+    # initialize
+    bag = np.zeros(len(words), dtype=np.float32)
+    # mark 1 if exist
+    for i, w in enumerate(words):
+        if w in sentence:
+            bag[i] = 1
+
+    return bag
 
 # use gpu
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
