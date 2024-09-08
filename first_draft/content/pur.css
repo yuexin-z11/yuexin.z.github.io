@@ -436,15 +436,15 @@ input[type=submit]:hover {
 .enter-button {
     position: relative;
     display: flex;
-    border: 5px solid white;
+    border: 7px solid white;
     margin-top: 400px;
     padding: 10px 20px;
     background-color: transparent;
     color: white;
+    font-family: Georgia;
     font-size: 35px; /* Adjust as needed */
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Roboto', sans-serif;
 }
 
 .enter-button:hover {
