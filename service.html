@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/second_style.css">
+    <link rel="stylesheet" href="style/initial_style.css">
+    <script src="style/functions.js"></script>
+    <style>
+        #layer1, #layer2 {
+            display: none;
+        }
+        #layer1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="layer1" class="layer2">
+    <div class="main-container" style="height: 100vh;">
+      <div class="left-container">
+        <!-- Navigation Bar -->
+        <nav class="nav2">
+          <a href="index.html">Home</a>
+          <a href="service.html" style="font-weight: bold;">Service</a>
+          <a href="projects.html">Projects</a>
+          <a href="qualification.html">Qualifications</a>
+          <a href="ai.html">AI Generated</a>
+          <a href="contact.html">Contact Me</a>
+        </nav>
+        <div class="bottom-text-wrapper">
+          <p class="bottom-text">teresayuexinzhang@gmail.com</p>
+          <p class="bottom-text">(806) 392-4012</p>
+        </div>
+      </div>
+
+      <div class="right-container" style="align-items: center;">
+        <!-- Service Projects -->
+        <!-- Container for service projects -->
+        <div class="service-projects-container">
+          <div class="contact-column3">
+              <a href="https://bigevent.tamu.edu/" target="_blank">
+                  <img src="images/big_event.png" alt="Big Event">
+                  <div class="image_overlay2">
+                      <p style="font-size: 3.5em;">Big Event</p>
+                  </div>
+              </a>
+          </div>
+          <div class="contact-column3">
+              <a href="https://classcouncils.tamu.edu/traditions/" target="_blank">
+                  <img src="images/cc.jpg" alt="CC">
+                  <div class="image_overlay2">
+                      <p style="font-size: 3.5em;">Class Traditions</p>
+                  </div>
+              </a>
+          </div>
+          <div class="contact-column3">
+              <a href="https://www.tamu.edu/campus-community/traditions/aggie-culture/replant.html" target="_blank">
+                  <img src="images/replant.png" alt="Replant">
+                  <div class="image_overlay2">
+                      <p style="font-size: 3.5em;">Aggie Replant</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="layer2" class="background-period">
+    <!-- Image and Overlay -->
+    <div class="image-container">
+      <img src="images/aggieland.jpg" alt="Background Image">
+      <div class="overlay">
+          <div class="background-text">Yuexin Zhang</div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->  
+    <div class="navCus2">
+      <div class="tabb">
+        <a href="index2.html"><button class="tab">Home</button></a>
+        <a href="service2.html"><button class="tab active">Service</button></a>
+        <a href="projects2.html"><button class="tab">Projects</button></a>
+        <a href="qualification2.html"><button class="tab">Qualifications</button></a>
+        <a href="ai2.html"><button class="tab">AI Generated</button></a>
+        <a href="contact2.html"><button class="tab">Contact Me</button></a>
+      </div>
+    </div>
+
+    <!-- Service Projects -->
+    <div class="introduction-container">
+      <div class="column">
+        <a href="https://bigevent.tamu.edu/" target="_blank">
+          <img src="images/big_event.png" alt="Big Event">
+          <div class="image_overlay">
+            <p>Big Event</p>
+          </div>
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://classcouncils.tamu.edu/traditions/" target="_blank">
+          <img src="images/cc.jpg" alt="CC">
+          <div class="image_overlay">
+            <p>Class Traditions</p>
+          </div>
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://www.tamu.edu/campus-community/traditions/aggie-culture/replant.html" target="_blank">
+          <img src="images/replant.png" alt="Replant">
+          <div class="image_overlay">
+            <p>Aggie Replant</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="myfooter">
+      <a class="icon1">
+        <p class="footer-text2">yuexin.z.jobs@gmail.com</p>
+      </a>
+      <a class="icon1">
+        <p class="footer-text1">(806)392-4012</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Toggle Switch -->
+  <label class="switch">
+    <input type="checkbox" id="layerToggle" onclick="toggleLayers()">
+    <span class="slider"></span>
+  </label>
+
+</body>
+</html>
